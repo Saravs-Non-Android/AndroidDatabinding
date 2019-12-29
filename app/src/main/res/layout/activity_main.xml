@@ -2,6 +2,7 @@
 
 <layout>
     <data>
+        <import type="codingwithmitch.com.databindinggettingstarted.util.StringUtil"/>
         <variable
             name="product"
             type="codingwithmitch.com.databindinggettingstarted.models.Product" />
@@ -33,7 +34,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="10sp"
                     android:textColor="@color/DarkGrey"
-                    android:text=""
+                    android:text="@{StringUtil.convertIntToString(product.num_ratings)}"
                     android:id="@+id/num_ratings"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
