@@ -49,7 +49,7 @@
                     android:scaleX="1.2"
                     android:scaleY="1.2"
                     android:numStars="5"
-                    android:rating="4"
+                    android:rating="@{product.rating.floatValue()}"
                     android:id="@+id/rating"
                     android:isIndicator="true"
                     android:layout_toLeftOf="@+id/num_ratings"
